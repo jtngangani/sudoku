@@ -1,4 +1,4 @@
-#include <cell.h>
+#include <grid.h>
 #include <assert.h>
 #include <iostream>
 
@@ -6,11 +6,10 @@ using namespace std;
 
 int main()
 {
-    cell* newCell = new cell();
+    grid* Grid = new grid();
 
-    newCell->setValue(55);
-
-    cout<<newCell->getValue();
+    Grid->setValue(1,2,5);
+    cout<<Grid->getValue(1,2);
 
     return 1;
 }

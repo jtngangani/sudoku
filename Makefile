@@ -2,7 +2,7 @@ PACKAGE    = sudoku
 BUILDFLAGS = -g
 CXX        = g++
 CXXFLAGS = -I. -I./src/ -I./include/
-SRCS = 	./src/cell.cpp \
+SRCS = 	./src/grid.cpp \
  main.cpp
 
 OBJS=$(subst .cpp,.o,$(SRCS))
@@ -17,6 +17,7 @@ depend:.depend
 	#$(CXX) $(BUILDFLAGS) $(CXXFLAGS) -MM $^>>./.depend
 	$(CXX) -MM $^>>./.depend
 
+include .depend
 .PHONY: clean 
 
 clean: 
@@ -24,4 +25,3 @@ clean:
 	rm -rf ./src/*.o
 	rm -rf *.o
 
-include .depend
