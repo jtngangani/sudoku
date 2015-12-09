@@ -4,8 +4,8 @@
 class cell
 {
     private:
-        bool valid;
-        int value;
+        bool m_valid;
+        int m_value;
 
     public:
         cell();                     //Constructor: Sets valid  to false and  value to INT_MAX

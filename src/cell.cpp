@@ -1,4 +1,7 @@
 #include <cell.h>
+#include <climits>
+#include <assert.h>
+#include <iostream>
 
 using namespace std;
 
@@ -26,7 +29,7 @@ void cell::setValid(bool p_valid)
         m_value = INT_MAX;
 }
 
-voidcell:: setValue(int p_value)
+void cell:: setValue(int p_value)
 {
     m_valid = true;
     m_value = p_value;
