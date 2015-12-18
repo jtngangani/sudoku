@@ -1,7 +1,7 @@
-PACKAGE    = sudoku
+PACKAGE    = sudokuSolve
 BUILDFLAGS = -g
 CXX        = g++
-CXXFLAGS = -I. -I./src/ -I./include/
+CXXFLAGS = -I. -I./src/ -I./include/ -std=c++11
 SRCS = 	./src/grid.cpp \
  main.cpp
 

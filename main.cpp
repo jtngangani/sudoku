@@ -10,6 +10,7 @@ int main()
 
     Grid->setValue(1,2,5);
     cout<<Grid->getValue(1,2);
-
+    
+    Grid->printGrid();
     return 1;
 }

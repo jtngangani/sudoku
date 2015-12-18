@@ -1,6 +1,10 @@
 #include "grid.h"
 #include "climits"
 #include "assert.h"
+#include "iostream"
+#include <string>
+
+using namespace std;
 
 grid::grid()
 {
@@ -33,3 +37,18 @@ int grid::getValue(int p_row, int p_col)
     return m_grid[p_row][p_col].value;
 }
 
+void grid::printGrid()
+{
+    for(int row = 0; row < N; row++)
+    {
+        cout<<"------------------------------------"<<endl;
+        for(int col = 0; col < N; col++)
+        {
+            string s = (m_grid[row][col].valid ? to_string(m_grid[row][col].value) : "-");
+            cout<<"| "<< s <<" ";
+        }
+        cout<<"|"<<endl;
+    }
+        cout<<"---------------------------------------------"<<endl;
+}
+        

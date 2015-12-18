@@ -20,6 +20,7 @@ class grid
         ~grid();
         int getValue(int p_row, int p_col);
         void setValue(int p_row, int p_col, int p_val);
+        void printGrid();
 };
 
 #endif
