@@ -1,8 +1,6 @@
 #ifndef GRID_H
 #define GRID_H
 
-#include <cell.h>
-
 const int N = 9;
 
 typedef struct
